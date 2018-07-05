@@ -11,4 +11,4 @@ def power_sum(power):
     return _sum
 
 
-print(power_sum(1000000))
+print(power_sum(10000))
