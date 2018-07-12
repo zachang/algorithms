@@ -15,10 +15,10 @@ def is_factor(value):
     return factors
 
 
-def largest_prime_factor(func):
+def largest_prime_factor(func, value):
     """get largest prime factors from a list"""
 
-    factors = func(10000)
+    factors = func(value)
     primes = []
     print("factors:", factors)
     for factor in factors:
@@ -35,5 +35,5 @@ def largest_prime_factor(func):
 
 if __name__ == '__main__':
     # import timeit
-    print(largest_prime_factor(is_factor))
+    print(largest_prime_factor(is_factor, 1000))
     # print(timeit.timeit("largest_prime_factor(is_factor)", globals=globals(), number=10000))

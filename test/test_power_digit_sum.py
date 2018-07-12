@@ -6,9 +6,8 @@ import unittest
 class TestCalculatePowerSum(unittest.TestCase):
 
     def test_power_digit_sum(self):
-        first_result = power_sum(1000)
-        second_result = power_sum(1000)
-        self.assertEqual(first_result, second_result)
+        summation = power_sum(4)
+        self.assertEqual(7, summation)
 
 
 if __name__ == '__main__':
