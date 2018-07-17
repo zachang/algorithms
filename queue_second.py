@@ -52,5 +52,5 @@ if __name__ == '__main__':
     queue.peek()
     queue.size()
     queue.dequeue()
-    queue.size()
     queue.peek()
+    queue.size()
