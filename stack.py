@@ -49,6 +49,7 @@ if __name__ == '__main__':
     stack.remove()
     stack.remove()
     stack.peek()
-    stack.remove()
     stack.size()
+    stack.remove()
     stack.peek()
+    stack.size()
