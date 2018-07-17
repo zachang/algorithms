@@ -7,7 +7,7 @@ class Queue:
     def enqueue(self, item):
         """Add items to list"""
         self.items.append(item)
-        print("Items added:",self.items)
+        print("Items added:", self.items)
 
     def is_empty(self):
         """Checks is list is empty"""
@@ -22,14 +22,14 @@ class Queue:
             return None
         else:
             self.items.pop(0)
-            print("Items left:",self.items)
+            print("Items left:", self.items)
 
     def size(self):
         """Checks for the size of the list"""
         print("Length:", len(self.items))
 
     def peek(self):
-        """Checks for single item in a list if list not is not empty"""
+        """Checks for single item in a list if not empty"""
         if self.is_empty():
             return None
         else:
