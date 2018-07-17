@@ -31,7 +31,7 @@ class Queue:
         print("Length:", len(self.items))
 
     def peek(self):
-        """Checks for single item in a list if is not empty"""
+        """Checks for single item in a list if not empty"""
         if self.is_empty():
             return None
         else:
