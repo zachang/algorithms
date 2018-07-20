@@ -20,7 +20,6 @@ def largest_prime_factor(func, value):
 
     factors = func(value)
     primes = []
-    print("factors:", factors)
     for factor in factors:
         is_prime = True
         for prime in range(2, factor):
@@ -30,10 +29,13 @@ def largest_prime_factor(func, value):
 
         if is_prime:
             primes.append(factor)
-    return dict(prime_factors=primes, max_prime_factor=max(primes))
+    if primes != []:
+        return dict(prime_factors=primes, max_prime_factor=max(primes))
+    else:
+        return dict(prime_factors=[], max_prime_factor=[])
 
 
 if __name__ == '__main__':
-    # import timeit
-    print(largest_prime_factor(is_factor, 1000))
-    # print(timeit.timeit("largest_prime_factor(is_factor)", globals=globals(), number=10000))
+    import timeit
+    print(largest_prime_factor(is_factor, 1111))
+    print(timeit.timeit("largest_prime_factor(is_factor, 1111)", globals=globals(), number=10000))
